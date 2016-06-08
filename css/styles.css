@@ -490,10 +490,47 @@ textarea {
 .clearfix {
   *zoom: 1; }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?yp652x');
+  src: url('../fonts/icomoon.eot?yp652x#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?yp652x') format('truetype'), url('../fonts/icomoon.woff?yp652x') format('woff'), url('../fonts/icomoon.svg?yp652x#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-menu:before {
+  content: "\62"; }
+
+.icon-cross:before {
+  content: "\78"; }
+
+.icon-mail:before {
+  content: "\6d"; }
+
+.icon-google-plus2:before {
+  content: "\67"; }
+
+.icon-facebook2:before {
+  content: "\66"; }
+
+.icon-twitter:before {
+  content: "\74"; }
+
 body {
   -webkit-font-smoothing: antialiased;
   background: #ffffff;
-  background-attachment: fixed;
   overflow-x: hidden;
   width: 100%;
   color: #010446; }
@@ -518,8 +555,9 @@ nav {
   nav ul {
     width: 100%;
     max-width: 1260px;
-    min-width: 1100px;
+    padding-left: 0;
     margin: 0 auto;
+    background: #010446;
     list-style-type: none; }
   nav li {
     float: left;
@@ -534,6 +572,49 @@ nav {
       color: #3d8bf5; }
     nav a.current {
       text-decoration: underline; }
+  nav #control-icon {
+    display: none;
+    position: absolute;
+    top: 13px;
+    right: 5px;
+    width: 50px;
+    height: 38px;
+    padding: 0;
+    text-align: center;
+    font-size: 30px; }
+    nav #control-icon:hover {
+      background-color: transparent; }
+    nav #control-icon.active:before {
+      content: "\78"; }
+  @media all and (max-width: 1100px) {
+    nav a {
+      font-size: 25px;
+      line-height: 43px; } }
+  @media all and (max-width: 1005px) {
+    nav a {
+      font-size: 20px;
+      line-height: 43px; } }
+  @media all and (max-width: 930px) {
+    nav {
+      height: 58px; }
+      nav ul {
+        float: left; }
+      nav li {
+        width: 100%;
+        margin: 0;
+        text-align: center; }
+        nav li:nth-child(2) {
+          border-top: 2px solid #01032D; }
+        nav li.menu-item {
+          display: none; }
+      nav a {
+        display: block;
+        width: 100%;
+        padding: 10px 0; }
+        nav a:hover {
+          background-color: #1c1d1e; }
+      nav #control-icon {
+        display: block; } }
 
 .logo {
   margin-top: 4px; }
@@ -548,6 +629,15 @@ nav {
     overflow: hidden; }
     .logo a:hover {
       opacity: .8; }
+  @media all and (max-width: 930px) {
+    .logo {
+      margin-top: 8px;
+      margin-bottom: 8px; }
+      .logo a {
+        width: 115px;
+        height: 42px;
+        margin-left: 15px;
+        padding: 0; } }
 
 .call-us {
   float: right;
@@ -557,7 +647,17 @@ nav {
     text-transform: none; }
     .call-us a:hover {
       color: #ffffff;
+      background-color: #010446;
       cursor: default; }
+  @media all and (max-width: 1100px) {
+    .call-us a {
+      line-height: 30px; } }
+  @media all and (max-width: 930px) {
+    .call-us {
+      margin-top: 10px; }
+      .call-us a {
+        border-top: 2px solid #01032D;
+        line-height: 40px; } }
 
 #hero {
   width: 100vw;
@@ -565,6 +665,7 @@ nav {
   min-height: 700px;
   background: #ffffff url(../images/bg-hero.jpg) no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   overflow: hidden; }
 
 .bubble {
