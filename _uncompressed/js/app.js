@@ -1,6 +1,5 @@
-/* ----------------------------------------
-   Public Vars
---------------------------------------- */
+/* ~~ Public Vars ~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 var controlNav          = $("#control-icon"),
     menuItem            = $(".menu-item");
 
@@ -15,9 +14,8 @@ function setNav() {
     }
 }
 
-/* ----------------------------------------
-   Init
---------------------------------------- */
+/* ~~ Init ~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 function init() {
 
@@ -26,6 +24,28 @@ function init() {
 
         setNav();
     });
+
+    $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        cssEase: 'linear'
+    });
+
+    // Smooth scrolling anchors
+    $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top -77
+            }, 1000);
+            return false;
+        }
+    }
+    });
+
 
 }
 

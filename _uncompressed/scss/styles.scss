@@ -1,14 +1,20 @@
-/* @author: John Lusky
-   Date: 1/16/16
+/* @Project: Material Distributors
+ * @Author: John Lusky
+ * @Date: 6/10/16
  */
 
-/// Imports
-@import "_normalize";
-@import "_boilerplate";
-@import "_mixins";
-@import "_typography";
+/* ~~ Imports ~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@import "normalize";
+@import "boilerplate";
+@import "mixins";
+@import "typography";
+@import "modules/slick";
+@import "modules/slick-theme";
 
-/// Colors
+
+/* ~~ Colors ~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 $white: #ffffff;
 $black: #000000;
 $blue: #010446;
@@ -17,209 +23,32 @@ $light-gray: #E4E4E4;
 $dark-gray: #1c1d1e;
 $darkest-gray: #151515;
 
-/// Global Vars
+
+/* ~~ Global Variables ~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 $width: 1280px;
+$global-wrap: 1024px;
 
 $breakpoint-desktop-lg: 1100px;
 $breakpoint-desktop-md: 1005px;
 $breakpoint-desktop-sm: 930px;
 
+$breakpoint-tablet-lg: 850px;
+$breakpoint-tablet-md: 800px;
+$breakpoint-tablet-sm: 768px;
 
-/// Global Styles
-body {
-    -webkit-font-smoothing: antialiased;
-    background: $white;
-    overflow-x: hidden;
-    width: 100%;
-    color: $blue;
-}
+$breakpoint-mobile-lg: 425px;
+$breakpoint-mobile-md: 375px;
+$breakpoint-mobile-sm: 320px;
 
-h1, h2 {
-    font-family: $font-oswald;
-    font-weight: normal;
-    color: $blue;
-}
 
-a {
-    color: $blue-light;
-    text-decoration: none;
+/* ~~ Global Styles ~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@import "global";
 
-    &:focus {
-        outline: none;
-    }
-}
 
-nav {
-    position: fixed;
-    width: 100%;
-    height: 77px;
-    background: $blue;
-    z-index: 1000;
-
-    ul {
-        width: 100%;
-        max-width: 1260px;
-        padding-left: 0;
-        margin: 0 auto;
-        background: $blue;
-        list-style-type: none;
-    }
-
-    li {
-        float: left;
-        margin: 17px;
-    }
-
-    a {
-        color: white;
-        font-family: $font-oswald;
-        font-size: 30px;
-        text-decoration: none;
-        text-transform: uppercase;
-
-        &:hover {
-            color: $blue-light;
-        }
-
-        &.current {
-            text-decoration: underline;
-        }
-    }
-
-    #control-icon {
-        display: none;
-        position: absolute;
-        top: 13px;
-        right: 5px;
-        width: 50px;
-        height: 38px;
-        padding: 0;
-        text-align: center;
-        font-size: 30px;
-
-        &:hover {
-            background-color: transparent;
-        }
-
-        &.active {
-            &:before {
-                content: "\78";
-            }
-        }
-    }
-
-    @media all and (max-width: $breakpoint-desktop-lg) {
-        a {
-            font-size: 25px;
-            line-height: 43px;
-        }
-    }
-
-    @media all and (max-width: $breakpoint-desktop-md) {
-        a {
-            font-size: 20px;
-            line-height: 43px;
-        }
-    }
-
-    @media all and (max-width: $breakpoint-desktop-sm) {
-        height: 58px;
-
-        ul {
-            float: left;
-        }
-
-        li {
-            width: 100%;
-            margin: 0;
-            text-align: center;
-
-            &:nth-child(2) {
-                border-top: 2px solid #01032D;
-            }
-
-            &.menu-item {
-                display: none;
-            }
-        }
-
-        a {
-            display: block;
-            width: 100%;
-            padding: 10px 0;
-
-            &:hover {
-                background-color: $dark-gray;
-            }
-        }
-
-        #control-icon {
-            display: block;
-        }
-    }
-}
-
-.logo {
-    margin-top: 4px;
-
-    a {
-        display: block;
-        width: 185px;
-        height: 75px;
-        background: url(../images/logo.png) no-repeat;
-        background-size: 100%;
-        @include textIndent;
-
-        &:hover {
-            opacity: .8;
-        }
-    }
-
-    @media all and (max-width: $breakpoint-desktop-sm) {
-        margin-top: 8px;
-        margin-bottom: 8px;
-
-        a {
-            width: 115px;
-            height: 42px;
-            margin-left: 15px;
-            padding: 0;
-        }
-    }
-
-}
-
-.call-us {
-    float: right;
-    margin-top: 22px;
-
-    a {
-        font-size: 20px;
-        text-transform: none;
-
-        &:hover {
-            color: $white;
-            background-color: $blue;
-            cursor: default;
-        }
-    }
-
-    @media all and (max-width: $breakpoint-desktop-lg) {
-        a {
-            line-height: 30px;
-        }
-    }
-
-    @media all and (max-width: $breakpoint-desktop-sm) {
-        margin-top: 10px;
-
-        a {
-            border-top: 2px solid #01032D;
-            line-height: 40px;
-        }
-    }
-}
-
+/* ~~ Hero Area ~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #hero {
     width: 100vw;
     height: 100vh;
@@ -228,6 +57,12 @@ nav {
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
+
+    @media all and (max-width: $breakpoint-tablet-sm) {
+        height: 470px;
+        min-height: auto;
+        background-position: center;
+    }
 }
 
 .bubble {
@@ -267,6 +102,47 @@ nav {
         font-size: 28px;
         color: $white;
     }
+
+    @media all and (max-width: $breakpoint-tablet-sm) {
+        top: 120px;
+        right: 0;
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+        border-radius: 0;
+        animation-duration: 0s;
+        text-align: center;
+
+        h1 {
+            width: 290px;
+            font-size: 28px;
+            margin: 10px auto 0;
+            line-height: 41px;
+
+            span {
+                display: block;
+                padding-top: 6px;
+                border-top: 1px solid rgba(255, 255, 255, 0.43);
+                font-size: 20px;
+                line-height: 20px;
+                font-style: italic;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            font-family: $font-arial;
+            line-height: 23px;
+        }
+
+        .wrap {
+            float: none;
+            max-width: 460px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    }
 }
 
 @keyframes bubble {
@@ -280,13 +156,20 @@ nav {
     }
 }
 
-#content {
-    position: relative;
-    background: $white url(../images/bg-subtle_grunge.png) repeat;
-    z-index: 20;
 
-    .wrap {
-        height: 700px;
+/* ~~ About Us ~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#about {
+
+    .masthead {
+        width: 100%;
+        height: 250px;
+        margin: 25px auto;
+        background:{
+            image: url(../images/bg-about.jpg);
+            size: cover;
+            position: center bottom;
+        }
     }
 
 }
