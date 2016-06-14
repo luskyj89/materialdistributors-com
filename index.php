@@ -14,6 +14,8 @@
 
         <?php require'inc/about.php'; ?>
         <?php require'inc/products.php'; ?>
+        <?php require'inc/projects.php'; ?>
+        <?php require'inc/contact.php'; ?>
 
     </div>
 </div>

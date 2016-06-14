@@ -173,3 +173,130 @@ $breakpoint-mobile-sm: 320px;
     }
 
 }
+
+/* ~~ Products ~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.slider-products {
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 20px 30px;
+
+    div {
+
+        img {
+            max-width: 800px;
+        }
+
+    }
+}
+
+
+/* ~~ Projects ~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#projects {
+
+}
+
+.main-wrap {
+    display: block;
+
+    img {
+        display: block;
+        float: left;
+        width: 66%;
+        height: auto;
+        margin: 10px 2% 10px 2%;
+    }
+
+    .content-wrap {
+        float: left;
+        width: 26%;
+        margin: 10px 2% 10px 2%;
+
+        h3 {
+            font: {
+                family: $font-oswald;
+                size: 28px;
+            }
+            text-transform: uppercase;
+        }
+
+        ul {
+            padding: 0px 18px;
+        }
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    @media all and (max-width: $breakpoint-tablet-sm) {
+
+        img {
+            width: 100%;
+        }
+
+        .content-wrap {
+            width: 100%;
+        }
+
+    }
+}
+
+
+/* ~~ Contact ~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#contact {
+    display: flex;
+    flex: {
+        flow: row;
+    }
+
+    h3 {
+        margin-bottom: 10px;
+        font: {
+            family: $font-oswald;
+            size: 30px;
+        }
+        text-transform: uppercase;
+    }
+
+    p {
+        font: {
+            size: 20px;
+        }
+    }
+
+    .wrap {
+        width: 46%;
+        margin: 10px 2%;
+    }
+}
+
+.contact-info {
+    width: 46%;
+    margin: 10px 2%;
+}
+
+.contact-form {
+    margin: 20px 0;
+}
+
+@media all and (max-width: $breakpoint-tablet-sm) {
+
+    #contact {
+        flex: {
+            flow: column;
+        }
+
+        .wrap {
+            width: 100%;
+        }
+
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+}

@@ -25,11 +25,19 @@ function init() {
         setNav();
     });
 
-    $('.slider').slick({
-        dots: true,
+    $('.slider-products').slick({
+        dots: false,
         infinite: true,
         speed: 500,
         cssEase: 'linear'
+    });
+
+    $('.slider-projects').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        cssEase: 'linear',
+        fade: true
     });
 
     // Smooth scrolling anchors
