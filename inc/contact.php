@@ -10,7 +10,7 @@
           if (isset($_REQUEST['email']))  {
 
           //Email information
-          $admin_email = "dbeccaria@material-distributors.com";
+          $admin_email = "info@material-distributors.com";
           $email = $_REQUEST['email'];
           $name = $_REQUEST['name'];
           $phone = $_REQUEST['phone'];
@@ -52,7 +52,7 @@
             Bala Cynwyd, PA 19004 <br/>
             (610)667-4800
         </p>
-        <p><a href="mailto:dbeccaria@material-distributors.com">dbeccaria@material-distributors.com</a></p>
+        <p><a href="info@material-distributors.com">info@material-distributors.com</a></p>
 
     </div>
 </section>

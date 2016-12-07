@@ -25,6 +25,18 @@ function init() {
         setNav();
     });
 
+    $('.bg-photo-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        dots: true,
+        infinite: true,
+        speed: 1000,
+        cssEase: 'linear',
+        fade: true,
+        pauseOnFocus: true,
+        pauseOnHover: false
+    });
+
     $('.slider-products').slick({
         dots: false,
         infinite: true,

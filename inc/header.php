@@ -10,6 +10,9 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="css/styles.css">
@@ -20,12 +23,12 @@
 
     <nav>
         <ul>
-            <li class="logo"><a href="index.php" title="Home">MD</a></li>
+            <li class="logo"><a href="#hero" title="Home">MD</a></li>
             <li class="menu-item"><a href="#about" title="About Us">About Us</a></li>
             <li class="menu-item"><a href="#products" title="Products">Products</a></li>
             <li class="menu-item"><a href="#projects" title="Projects">Projects</a></li>
             <li class="menu-item"><a href="#contact" title="Contact Us">Contact Us</a></li>
-            <li class="call-us menu-item"><a href="tel:6105555555" title="Call Us Now">Call Us Today! 610-555-5555</a></li>
+            <li class="call-us menu-item"><a href="tel:6106674800" title="Call Us Now">Call Us Today! &nbsp; (610) 667-4800</a></li>
         </ul>
 
         <a id="control-icon" class="icon-menu" href="#"></a>

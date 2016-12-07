@@ -53,15 +53,95 @@ $breakpoint-mobile-sm: 320px;
     width: 100vw;
     height: 100vh;
     min-height: 700px;
-    background: $white url(../images/bg-hero.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    // background: $white url(../images/bg-hero.jpg) no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
     overflow: hidden;
 
     @media all and (max-width: $breakpoint-tablet-sm) {
         height: 470px;
         min-height: auto;
         background-position: center;
+    }
+}
+
+.bg-photo-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    color: $black;
+
+    .slick-slide {
+        height: 100vh;
+        background-color: green;
+        background-size: cover;
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        width: 250px;
+
+        li {
+
+            button {
+
+                &:before {
+                    font-size: 16px;
+                }
+
+            }
+
+        }
+    }
+
+    .slick-arrow {
+        display: none!important;
+    }
+}
+
+.cto-bubble {
+    display: block;
+    position: relative;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background: $white;
+    padding: 40px 0;
+    border-radius: 100px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: $blue;
+    transition: all .5s ease-out;
+
+    span {
+        display: block;
+        font-size: 12px;
+        font-weight: normal;
+        opacity: 0;
+        transition: all .5s ease-out;
+    }
+
+    &:hover {
+        position: relative;
+        top: 4px;
+
+        span {
+            opacity: 1;
+        }
+    }
+
+    @media all and (max-width: $breakpoint-tablet-sm) {
+        width: 100px;
+        height: 60px;
+        margin: 0 auto;
+        padding: 20px 0;
+        border-radius: 15px;
     }
 }
 
@@ -74,7 +154,7 @@ $breakpoint-mobile-sm: 320px;
     height: 1000px;
     padding-top: 330px;
     padding-left: 80px;
-    background-color: rgba(1, 4, 70, 0.6);
+    background-color: rgba(1, 4, 70, 0.75);
     z-index: 10;
     border-radius: 1000px;
     animation-name: bubble;
@@ -99,12 +179,12 @@ $breakpoint-mobile-sm: 320px;
 
     p {
         font-family: $font-oswald;
-        font-size: 28px;
+        font-size: 20px;
         color: $white;
     }
 
     @media all and (max-width: $breakpoint-tablet-sm) {
-        top: 120px;
+        top: 85px;
         right: 0;
         width: 100%;
         height: auto;
@@ -184,6 +264,7 @@ $breakpoint-mobile-sm: 320px;
     div {
 
         img {
+            width: 100%;
             max-width: 800px;
         }
 

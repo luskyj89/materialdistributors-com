@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* @Project: Material Distributors
  * @Author: John Lusky
  * @Date: 6/10/16
@@ -11,13 +12,26 @@
 /**
  * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
   display: block; }
 
 /**
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-audio, canvas, video {
+audio,
+canvas,
+video {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
@@ -58,7 +72,11 @@ html {
  * Address `font-family` inconsistency between `textarea` and other form
  * elements.
  */
-html, button, input, select, textarea {
+html,
+button,
+input,
+select,
+textarea {
   font-family: sans-serif; }
 
 /**
@@ -79,7 +97,8 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-a:active, a:hover {
+a:active,
+a:hover {
   outline: 0; }
 
 /* ==========================================================================
@@ -123,7 +142,8 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
-b, strong {
+b,
+strong {
   font-weight: bold; }
 
 blockquote {
@@ -153,13 +173,17 @@ mark {
 /**
  * Address margins set differently in IE 6/7.
  */
-p, pre {
+p,
+pre {
   margin: 1em 0; }
 
 /**
  * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
  */
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
   font-size: 1em; }
@@ -181,7 +205,8 @@ q {
 /**
  * Address `quotes` property not supported in Safari 4.
  */
-q:before, q:after {
+q:before,
+q:after {
   content: '';
   content: none; }
 
@@ -194,7 +219,8 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -212,7 +238,10 @@ sub {
 /**
  * Address margins set differently in IE 6/7.
  */
-dl, menu, ol, ul {
+dl,
+menu,
+ol,
+ul {
   margin: 1em 0; }
 
 dd {
@@ -221,13 +250,16 @@ dd {
 /**
  * Address paddings set differently in IE 6/7.
  */
-menu, ol, ul {
+menu,
+ol,
+ul {
   padding: 0 0 0 40px; }
 
 /**
  * Correct list images handled incorrectly in IE 7.
  */
-nav ul, nav ol {
+nav ul,
+nav ol {
   list-style: none;
   list-style-image: none; }
 
@@ -296,7 +328,10 @@ legend {
  *    and Chrome.
  * 3. Improve appearance and consistency in all browsers.
  */
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-size: 100%;
   /* 1 */
   margin: 0;
@@ -310,7 +345,8 @@ button, input, select, textarea {
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-button, input {
+button,
+input {
   line-height: normal; }
 
 /**
@@ -319,7 +355,8 @@ button, input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-button, select {
+button,
+select {
   text-transform: none; }
 
 /**
@@ -331,7 +368,10 @@ button, select {
  * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -342,7 +382,8 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-button[disabled], html input[disabled] {
+button[disabled],
+html input[disabled] {
   cursor: default; }
 
 /**
@@ -351,7 +392,8 @@ button[disabled], html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -376,13 +418,15 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
  * Remove inner padding and border in Firefox 3+.
  */
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
@@ -406,7 +450,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-html, button, input, select, textarea {
+html,
+button,
+input,
+select,
+textarea {
   color: #222; }
 
 html {
@@ -429,7 +477,10 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
-audio, canvas, img, video {
+audio,
+canvas,
+img,
+video {
   vertical-align: middle; }
 
 fieldset {
@@ -472,7 +523,8 @@ textarea {
   position: absolute;
   width: 1px; }
 
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -483,7 +535,8 @@ textarea {
 .invisible {
   visibility: hidden; }
 
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
   content: " ";
   display: table; }
 
@@ -495,8 +548,8 @@ textarea {
 
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?yp652x');
-  src: url('../fonts/icomoon.eot?yp652x#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?yp652x') format('truetype'), url('../fonts/icomoon.woff?yp652x') format('woff'), url('../fonts/icomoon.svg?yp652x#icomoon') format('svg');
+  src: url("../fonts/icomoon.eot?yp652x");
+  src: url("../fonts/icomoon.eot?yp652x#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?yp652x") format("truetype"), url("../fonts/icomoon.woff?yp652x") format("woff"), url("../fonts/icomoon.svg?yp652x#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -538,7 +591,6 @@ textarea {
   box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -558,7 +610,8 @@ textarea {
     cursor: pointer;
     cursor: hand; }
 
-.slick-slider .slick-track, .slick-slider .slick-list {
+.slick-slider .slick-track,
+.slick-slider .slick-list {
   transform: translate3d(0, 0, 0); }
 
 .slick-track {
@@ -601,7 +654,7 @@ textarea {
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("/ajax-loader.gif") center center no-repeat; }
+  background: #fff url("./ajax-loader.gif") center center no-repeat; }
 
 /* Icons */
 @font-face {
@@ -612,7 +665,8 @@ textarea {
   font-style: normal; }
 
 /* Arrows */
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   position: absolute;
   display: block;
   height: 40px;
@@ -628,15 +682,21 @@ textarea {
   border: none;
   outline: none;
   z-index: 999; }
-  .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
     outline: none;
     background: transparent;
     color: transparent; }
-    .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
       opacity: 1; }
-  .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
     opacity: 0.25; }
-  .slick-prev:before, .slick-next:before {
+  .slick-prev:before,
+  .slick-next:before {
     font-family: "slick";
     font-size: 40px;
     line-height: 1;
@@ -651,9 +711,9 @@ textarea {
     left: auto;
     right: -25px; }
   .slick-prev:before {
-    content: "\2190"; }
+    content: "←"; }
     [dir="rtl"] .slick-prev:before {
-      content: "\2192"; }
+      content: "→"; }
 
 .slick-next {
   right: -20px; }
@@ -661,9 +721,9 @@ textarea {
     left: -25px;
     right: auto; }
   .slick-next:before {
-    content: "\2192"; }
+    content: "→"; }
     [dir="rtl"] .slick-next:before {
-      content: "\2190"; }
+      content: "←"; }
 
 /* Dots */
 .slick-dotted.slick-slider {
@@ -706,7 +766,7 @@ textarea {
         position: absolute;
         top: 0;
         left: 0;
-        content: "\2022";
+        content: "•";
         width: 20px;
         height: 20px;
         font-family: "slick";
@@ -737,7 +797,7 @@ body {
     box-sizing: border-box; }
 
 h1, h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: normal;
   color: #010446; }
 
@@ -765,7 +825,7 @@ nav {
     margin: 17px; }
   nav a {
     color: white;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 30px;
     text-decoration: none;
     text-transform: uppercase; }
@@ -821,9 +881,9 @@ nav {
   margin-top: 4px; }
   .logo a {
     display: block;
-    width: 185px;
+    width: 140px;
     height: 75px;
-    background: url(../images/logo.png) no-repeat;
+    background: url(../images/logo-gradient.png) no-repeat;
     background-size: 100%;
     text-indent: 100%;
     white-space: nowrap;
@@ -835,7 +895,7 @@ nav {
       margin-top: 8px;
       margin-bottom: 8px; }
       .logo a {
-        width: 115px;
+        width: 85px;
         height: 42px;
         margin-left: 15px;
         padding: 0; } }
@@ -877,10 +937,11 @@ section h2 {
   line-height: 50px;
   text-transform: uppercase;
   border-top: 4px solid #010446; }
+
 section header p {
   max-width: 700px;
   margin: 5px 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 20px;
   line-height: 31px; }
 
@@ -925,15 +986,67 @@ textarea {
   width: 100vw;
   height: 100vh;
   min-height: 700px;
-  background: #ffffff url(../images/bg-hero.jpg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   overflow: hidden; }
   @media all and (max-width: 768px) {
     #hero {
       height: 470px;
       min-height: auto;
       background-position: center; } }
+
+.bg-photo-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  color: #000000; }
+  .bg-photo-slider .slick-slide {
+    height: 100vh;
+    background-color: green;
+    background-size: cover; }
+  .bg-photo-slider .slick-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 250px; }
+    .bg-photo-slider .slick-dots li button:before {
+      font-size: 16px; }
+  .bg-photo-slider .slick-arrow {
+    display: none !important; }
+
+.cto-bubble {
+  display: block;
+  position: relative;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background: #ffffff;
+  padding: 40px 0;
+  border-radius: 100px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #010446;
+  transition: all .5s ease-out; }
+  .cto-bubble span {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    opacity: 0;
+    transition: all .5s ease-out; }
+  .cto-bubble:hover {
+    position: relative;
+    top: 4px; }
+    .cto-bubble:hover span {
+      opacity: 1; }
+  @media all and (max-width: 768px) {
+    .cto-bubble {
+      width: 100px;
+      height: 60px;
+      margin: 0 auto;
+      padding: 20px 0;
+      border-radius: 15px; } }
 
 .bubble {
   box-sizing: border-box;
@@ -944,7 +1057,7 @@ textarea {
   height: 1000px;
   padding-top: 330px;
   padding-left: 80px;
-  background-color: rgba(1, 4, 70, 0.6);
+  background-color: rgba(1, 4, 70, 0.75);
   z-index: 10;
   border-radius: 1000px;
   animation-name: bubble;
@@ -961,12 +1074,12 @@ textarea {
       line-height: 20px;
       font-style: italic; }
   .bubble p {
-    font-family: 'Oswald', sans-serif;
-    font-size: 28px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
     color: #ffffff; }
   @media all and (max-width: 768px) {
     .bubble {
-      top: 120px;
+      top: 85px;
       right: 0;
       width: 100%;
       height: auto;
@@ -1001,7 +1114,6 @@ textarea {
   from {
     right: -400px;
     opacity: 0; }
-
   to {
     right: -350px;
     overflow: 1; } }
@@ -1023,6 +1135,7 @@ textarea {
   margin: 25px auto;
   padding: 20px 30px; }
   .slider-products div img {
+    width: 100%;
     max-width: 800px; }
 
 /* ~~ Projects ~~
@@ -1040,7 +1153,7 @@ textarea {
     width: 26%;
     margin: 10px 2% 10px 2%; }
     .main-wrap .content-wrap h3 {
-      font-family: 'Oswald', sans-serif;
+      font-family: "Oswald", sans-serif;
       font-size: 28px;
       text-transform: uppercase; }
     .main-wrap .content-wrap ul {
@@ -1062,7 +1175,7 @@ textarea {
       flex-flow: row; }
   #contact h3 {
     margin-bottom: 10px;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 30px;
     text-transform: uppercase; }
   #contact p {

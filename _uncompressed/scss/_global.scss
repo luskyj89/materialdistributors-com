@@ -140,9 +140,9 @@ nav {
 
     a {
         display: block;
-        width: 185px;
+        width: 140px;
         height: 75px;
-        background: url(../images/logo.png) no-repeat;
+        background: url(../images/logo-gradient.png) no-repeat;
         background-size: 100%;
         @include textIndent;
 
@@ -156,7 +156,7 @@ nav {
         margin-bottom: 8px;
 
         a {
-            width: 115px;
+            width: 85px;
             height: 42px;
             margin-left: 15px;
             padding: 0;
