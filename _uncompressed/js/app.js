@@ -37,11 +37,25 @@ function init() {
         pauseOnHover: false
     });
 
+    //// Product Slider Navigation
+    $('.product-item').click(function(e) {
+        e.preventDefault();
+        var t = $(this);
+        var index = $('.product-item').index(t);
+        var currentProduct = t.html();
+
+        console.log(currentProduct);
+
+        $('.slider-products').slick('slickGoTo', parseInt(index));
+        $('#current-product').html(currentProduct);
+    });
+
     $('.slider-products').slick({
         dots: false,
         infinite: true,
         speed: 500,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        fade: true
     });
 
     $('.slider-projects').slick({

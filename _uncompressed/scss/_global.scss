@@ -245,6 +245,7 @@ section {
     }
     padding: 0;
     list-style-type: none;
+    justify-content: center;
 
     li {
         width: 211px;
@@ -254,6 +255,7 @@ section {
             size: 14px;
             weight: bold;
         }
+        text-align: center;
     }
 
     @media all and (max-width: $breakpoint-mobile-lg) {

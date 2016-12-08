@@ -258,7 +258,7 @@ $breakpoint-mobile-sm: 320px;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .slider-products {
     max-width: 800px;
-    margin: 25px auto;
+    margin: 10px auto 25px;
     padding: 20px 30px;
 
     div {
@@ -269,6 +269,11 @@ $breakpoint-mobile-sm: 320px;
         }
 
     }
+}
+
+#current-product {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 

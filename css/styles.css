@@ -953,13 +953,16 @@ section header p {
   -ms-flex-direction: row;
       flex-direction: row;
   padding: 0;
-  list-style-type: none; }
+  list-style-type: none;
+  -ms-flex-pack: center;
+      justify-content: center; }
   .item-list li {
     width: 211px;
     margin: 10px;
     padding: 0 10px;
     font-size: 14px;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: center; }
   @media all and (max-width: 425px) {
     .item-list li {
       width: 100%;
@@ -1132,11 +1135,15 @@ textarea {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .slider-products {
   max-width: 800px;
-  margin: 25px auto;
+  margin: 10px auto 25px;
   padding: 20px 30px; }
   .slider-products div img {
     width: 100%;
     max-width: 800px; }
+
+#current-product {
+  margin-bottom: 10px;
+  text-align: center; }
 
 /* ~~ Projects ~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
