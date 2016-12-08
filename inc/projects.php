@@ -113,6 +113,24 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <div class="main-wrap">
+                    <img src="images/gfx-ny.png" />
+                    <div class="content-wrap">
+                        <h3>New York</h3>
+                        <ul>
+                            <li>Project</li>
+                            <li>Project</li>
+                            <li>Project</li>
+                            <li>Project</li>
+                            <li>Project</li>
+                            <li>Project</li>
+                            <li>Project</li>
+                            <li>Project</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

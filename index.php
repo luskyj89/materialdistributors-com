@@ -2,11 +2,9 @@
 
 <section id="hero">
     <div class="bg-photo-slider">
-        <div style="background-image: url(images/photo_asi-toiletpartitions.jpg);">your content2</div>
-        <div style="background-image: url(images/photo_penco-lockers.jpg);">your content3</div>
-        <div style="background-image: url(images/photo_asi-toiletpartitions.jpg);">your content2</div>
-        <div style="background-image: url(images/photo_penco-lockers.jpg);">your content3</div>
-        <div style="background-image: url(images/photo_asi-toiletpartitions.jpg);">your content2</div>
+        <div style="background-image: url(images/photo_draper-projection-screen.jpg);"></div>
+        <div style="background-image: url(images/photo_penco-lockers.jpg);"></div>
+        <div style="background-image: url(images/photo_asi-toiletpartitions.jpg);"></div>
     </div>
 
     <div class="bubble">
