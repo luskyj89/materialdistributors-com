@@ -57,7 +57,7 @@
                 <div class="main-wrap">
                     <img src="images/gfx-de.png" />
                     <div class="content-wrap">
-                        <h3>Deleware</h3>
+                        <h3>Delaware</h3>
                         <ul>
                             <li>CHRISTINA LANDING – WILM, DE – GILBANE</li>
                             <li>JOINT ARMED FORCES RESERVE – NEW CASTLE, DE – HARKINS BUILDERS</li>
