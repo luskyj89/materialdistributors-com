@@ -254,6 +254,13 @@ $breakpoint-mobile-sm: 320px;
 
 }
 
+.logo-block {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
 /* ~~ Products ~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .slider-products {
@@ -289,17 +296,18 @@ $breakpoint-mobile-sm: 320px;
     img {
         display: block;
         float: left;
-        width: 66%;
+        width: 56%;
         height: auto;
         margin: 10px 2% 10px 2%;
     }
 
     .content-wrap {
         float: left;
-        width: 26%;
+        width: 36%;
         margin: 10px 2% 10px 2%;
 
         h3 {
+            margin-top: 0;
             font: {
                 family: $font-oswald;
                 size: 28px;
@@ -309,6 +317,10 @@ $breakpoint-mobile-sm: 320px;
 
         ul {
             padding: 0px 18px;
+        }
+
+        li {
+            font-size: 12px;
         }
     }
 

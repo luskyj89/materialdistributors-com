@@ -4,27 +4,27 @@
             <h2>Products</h2>
         </header>
 
-        <h3 id="current-product">Bathroom Accessories</h3>
+        <h3 id="current-product">Washroom Accessories</h3>
 
         <div class="slider-products">
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
-            <div><img src="images/lockers.jpg" /></div>
+            <div><img src="images/product_washroom-accessories.jpg" /></div>
+            <div><img src="images/product_toilet-partitions.jpg" /></div>
+            <div><img src="images/no-product-photo.png" /></div>
+            <div><img src="images/product_fire-extinguishers.jpg" /></div>
+            <div><img src="images/product_display-boards.jpg" /></div>
+            <div><img src="images/no-product-photo.png" /></div>
+            <div><img src="images/no-product-photo.png" /></div>
+            <div><img src="images/no-product-photo.png" /></div>
+            <div><img src="images/no-product-photo.png" /></div>
+            <div><img src="images/no-product-photo.png" /></div>
+            <div><img src="images/no-product-photo.png" /></div>
+            <div><img src="images/no-product-photo.png" /></div>
+            <div><img src="images/no-product-photo.png" /></div>
+            <div><img src="images/no-product-photo.png" /></div>
+            <div><img src="images/no-product-photo.png" /></div>
+            <div><img src="images/no-product-photo.png" /></div>
+            <div><img src="images/no-product-photo.png" /></div>
+            <div><img src="images/no-product-photo.png" /></div>
         </div>
 
         <ul class="item-list">

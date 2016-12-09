@@ -246,6 +246,7 @@ section {
     padding: 0;
     list-style-type: none;
     justify-content: center;
+    align-items: center;
 
     li {
         width: 211px;
@@ -256,6 +257,14 @@ section {
             weight: bold;
         }
         text-align: center;
+
+        &:first-child {
+
+            a {
+                color: $blue;
+            }
+
+        }
     }
 
     @media all and (max-width: $breakpoint-mobile-lg) {

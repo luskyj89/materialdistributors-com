@@ -955,7 +955,9 @@ section header p {
   padding: 0;
   list-style-type: none;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
   .item-list li {
     width: 211px;
     margin: 10px;
@@ -963,6 +965,8 @@ section header p {
     font-size: 14px;
     font-weight: bold;
     text-align: center; }
+    .item-list li:first-child a {
+      color: #010446; }
   @media all and (max-width: 425px) {
     .item-list li {
       width: 100%;
@@ -1131,6 +1135,12 @@ textarea {
   background-size: cover;
   background-position: center bottom; }
 
+.logo-block {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 15px;
+  margin-bottom: 20px; }
+
 /* ~~ Products ~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .slider-products {
@@ -1152,19 +1162,22 @@ textarea {
   .main-wrap img {
     display: block;
     float: left;
-    width: 66%;
+    width: 56%;
     height: auto;
     margin: 10px 2% 10px 2%; }
   .main-wrap .content-wrap {
     float: left;
-    width: 26%;
+    width: 36%;
     margin: 10px 2% 10px 2%; }
     .main-wrap .content-wrap h3 {
+      margin-top: 0;
       font-family: "Oswald", sans-serif;
       font-size: 28px;
       text-transform: uppercase; }
     .main-wrap .content-wrap ul {
       padding: 0px 18px; }
+    .main-wrap .content-wrap li {
+      font-size: 12px; }
   .main-wrap:after {
     clear: both; }
   @media all and (max-width: 768px) {

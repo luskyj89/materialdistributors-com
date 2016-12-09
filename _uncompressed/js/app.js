@@ -47,7 +47,18 @@ function init() {
         console.log(currentProduct);
 
         $('.slider-products').slick('slickGoTo', parseInt(index));
-        $('#current-product').html(currentProduct);
+    });
+
+    // On before slide change
+    $('.slider-products').on('afterChange', function(event, slick, currentSlide, nextSlide){
+
+      var currentSlide = $('.slider-products').slick('slickCurrentSlide');
+      var currentTitle = $('.product-item').eq(currentSlide).html();
+
+      $('#current-product').html(currentTitle);
+      $('.product-item').css('color', '#3d8bf5');
+      $('.product-item').eq(currentSlide).css('color', '#010446');
+
     });
 
     $('.slider-products').slick({
