@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Material Distributors</title>
-    <meta name="description" content="">
+    <meta name="description" content="Since 1947, Material Distributors has been a reliable source of Division 10, 11, and 12 products to our contractor clients... supplying them with materials from over 300 manufacturers.  Quality Products On Time.">
+    <meta name="keywords" content="material, distributors, material distributors, material distributors inc, material distributors incorporated, construction, division, 10, 11, 12, division 10, division 11, division 12, pennsylvania, bala cynwyd, pa">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
