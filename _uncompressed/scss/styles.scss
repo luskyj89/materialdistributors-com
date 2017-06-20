@@ -75,7 +75,7 @@ $breakpoint-mobile-sm: 320px;
 
     .slick-slide {
         height: 100vh;
-        background-color: green;
+        background-color: black;
         background-size: cover;
     }
 
@@ -243,13 +243,20 @@ $breakpoint-mobile-sm: 320px;
 
     .masthead {
         width: 100%;
-        height: 250px;
+        max-width: 627px;
         margin: 25px auto;
-        background:{
-            image: url(../images/bg-about.jpg);
-            size: cover;
-            position: center bottom;
-        }
+    }
+
+    h2 {
+        display: inline-block;
+    }
+
+
+    .anniversary {
+        display: inline-block;
+        width: 90px;
+        margin-top: -50px;
+        margin-left: 15px;
     }
 
 }

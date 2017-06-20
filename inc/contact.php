@@ -23,7 +23,7 @@
           mail($admin_email, "$subject", $message, "From:" . $email);
 
           //Email response
-          echo "Thank you for contacting us! We will get back to you shortly. If you need to get in touch fast, please call us instead: (610)667-4800.";
+          echo "Thank you for contacting us! We will get back to you shortly. If you need to get in touch fast, please call us instead: (610) 667-4800.";
           }
 
           //if "email" variable is not filled out, display the form
@@ -48,9 +48,9 @@
     <div class="contact-info">
         <h3>Material Distributors, Inc.</h3>
         <p>
-            8 Cynwyd <br/>
+            8 Cynwyd Road<br/>
             Bala Cynwyd, PA 19004 <br/>
-            (610)667-4800
+            (610) 667-4800
         </p>
         <p><a href="info@material-distributors.com">info@material-distributors.com</a></p>
 
